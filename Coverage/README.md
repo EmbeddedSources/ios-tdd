@@ -14,6 +14,11 @@ Consider adding new configuration "Coverage" (based on Debug configuration) for 
 
 [CoverStory](http://code.google.com/p/coverstory/) is a great OS X application for viewing coverage results. You can use [gcovr](https://software.sandia.gov/trac/fast/export/2406/fast/trunk/scripts/gcovr) to use it with continuous integration (Jenkins [cobertura](http://cobertura.sourceforge.net/) plug-in).
 
+```shell
+cd ~/Library/Developer/Xcode/DerivedData/YourProjectBuild
+gcovr --root="/path/to/your/project" --xml
+```
+
 ## A hack to make SDK happy
 
 ```c
